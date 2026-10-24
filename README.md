@@ -1,2 +1,22 @@
-# style-learner
-Learn persistent writing styles from conversations and works, with separate input and output styles.
+# Style Learner · 多风格写作学习
+
+从对话、论文和其他写作作品中提炼并长期保存风格，按指定 style 写作或改写。
+
+- 多个 style 独立积累，输入学习与输出写作分别选择。
+- 区分原创、参考作品和 AI 草稿，记录证据与置信度。
+- 本地风格库支持去重、版本恢复、删除和独立 skill 导出。
+- Python 3.9+，存储脚本仅依赖标准库。
+
+完整安装步骤、持续学习接入及使用示例见 [使用说明](使用说明.md)。技能入口为 [SKILL.md](style-learner/SKILL.md)。
+
+例如：“这篇论文学习到 academic”“用 academic 改写下面这段话”“本对话输入学习到 daily，但输出采用 academic”。
+
+普通 skill 按需调用。每轮持续学习需要宿主指令接入，不是后台监听器；本项目不训练模型参数，也不默认存储原始作品。
+
+## 测试
+
+```sh
+python -m unittest discover -s tests -v
+```
+
+测试使用隔离的临时风格库，不读写用户真实档案。

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.sqlite3-*
+.validation-deps/
+tests/style-test-*/
+.env

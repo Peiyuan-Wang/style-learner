@@ -1,0 +1,6 @@
+interface:
+  display_name: "多风格写作学习"
+  short_description: "从对话与作品持续积累独立风格档案，分别选择学习和写作风格"
+  default_prompt: "使用 $style-learner，把我提供的作品学习到指定 style，或按已有 style 帮我写作。"
+policy:
+  allow_implicit_invocation: true
